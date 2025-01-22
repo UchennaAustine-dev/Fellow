@@ -96,3 +96,19 @@ body {
                 0 0 40px theme('colors.yellow.500/40');
   }
 }
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.skill-progress {
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
